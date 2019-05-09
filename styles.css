@@ -1,5 +1,11 @@
 /*---Global Variables --*/
-html html {
+.carousel-caption h5 {
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-size: 18px;
+  content: normal;
+}
+
+* html {
   background-color: #ffff;
   color: #555;
   font-size: 20px;
@@ -7,15 +13,20 @@ html html {
   text-rendering: optimizeLegibility;
 }
 
-html body {
+* body {
   font-family: 'Lato', 'Arial', sans-serif;
   margin: 0;
   padding: 0;
 }
 
+footer {
+  margin-top: 60px;
+}
+
 .box {
   margin: 30px auto 25px auto;
   padding: 0;
+  text-align: center;
 }
 
 .text-center {
@@ -88,7 +99,7 @@ h2:after {
 
 .carousel-caption {
   position: absolute;
-  top: 55%;
+  top: 35%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -104,6 +115,19 @@ h2:after {
   padding-bottom: 1rem;
 }
 
+.columns3 ul {
+  list-style: none;
+  display: block;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 125%;
+  margin-bottom: 35px;
+}
+
+.columns3 h1 {
+  padding: 35px;
+}
+
 .gradient-img img {
   display: block;
   height: 700px;
@@ -115,7 +139,25 @@ h2:after {
   margin-bottom: 80px;
 }
 
+table {
+  width: 100%;
+  font-size: 110%;
+  text-align: center;
+  margin-top: 60px;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 2px solid black;
+  padding: 8px;
+}
+
 /*---Media Queries --*/
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
 /*---Firefox Bug Fix --*/
 .carousel-item {
   transition: -webkit-transform 0.5s ease;
