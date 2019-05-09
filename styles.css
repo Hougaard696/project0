@@ -1,0 +1,128 @@
+/*---Global Variables --*/
+html html {
+  background-color: #ffff;
+  color: #555;
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+html body {
+  font-family: 'Lato', 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  margin: 30px auto 25px auto;
+  padding: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.Logo {
+  font-size: 200%;
+  padding: 0;
+}
+
+/*---Nav Bar --*/
+.navbar {
+  padding: .9rem;
+}
+
+.navbar {
+  padding-right: 20px;
+}
+
+.nav-link {
+  font-size: 1.1em !important;
+}
+
+/*---Header Sections --*/
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 240%;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin: 30px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #1e3799;
+  content: "";
+  width: 80px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+/*---Carousel --*/
+.carousel-inner img {
+  display: block;
+  height: 741px;
+  width: auto;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 55%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.carousel-caption h5 {
+  font-size: 500%;
+  text-transform: uppercase;
+}
+
+.carousel-caption p {
+  font-size: 200%;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+.gradient-img img {
+  display: block;
+  height: 700px;
+  width: auto;
+  margin-bottom: 80px;
+}
+
+.cards-section {
+  margin-bottom: 80px;
+}
+
+/*---Media Queries --*/
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*# sourceMappingURL=styles.css.map */
